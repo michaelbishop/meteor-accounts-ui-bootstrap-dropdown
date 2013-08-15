@@ -3,6 +3,7 @@ Package.describe({
 });
 
 Package.on_use(function (api) {
+  api.imply('handlebars');
   api.use(['accounts-base', 'underscore', 'templating', 'bootstrap', 'jquery'], 'client');
 
   api.add_files([
